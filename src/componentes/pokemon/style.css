@@ -1,0 +1,39 @@
+#root:not(:has(.c-buscador)) > div:not([class]) {
+  width: calc(100% - 32px);
+  max-width: 440px;
+  margin: 16px auto;
+  padding: 24px 16px;
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  background: var(--superficie);
+  text-align: center;
+}
+
+#root:not(:has(.c-buscador)) > div:not([class]) h1 {
+  margin-bottom: 8px;
+  color: var(--texto);
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+#root:not(:has(.c-buscador)) > div:not([class]) img {
+  display: block;
+  margin: 0 auto 12px;
+}
+
+#root:not(:has(.c-buscador)) > div:not([class]) p {
+  margin: 4px 0;
+  color: var(--texto);
+}
+
+#root:not(:has(.c-buscador)) > div:not([class]) p:first-child {
+  color: var(--texto-suave);
+}
+
+#root:not(:has(.c-buscador)) > div:not([class]) button {
+  margin-top: 12px;
+  border: 0;
+  background: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}

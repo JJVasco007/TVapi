@@ -1,0 +1,143 @@
+.coleccion {
+  width: 100%;
+  max-width: min(100%, 48rem);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1.5rem clamp(0.75rem, 3vw, 1.5rem) 110px;
+  color: var(--texto);
+  font-family: system-ui, sans-serif;
+}
+
+.coleccion-titulo {
+  margin: 0 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 750;
+}
+
+.coleccion-contador {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  margin: 0 0 0.9rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.coleccion-contador span {
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.coleccion-boton {
+  display: block;
+  width: 100%;
+  min-height: 3rem;
+  margin-bottom: 1.4rem;
+  border: 0;
+  border-radius: 12px;
+  background: var(--morado);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.coleccion-boton:hover:not(:disabled) {
+  box-shadow: 0 0 14px var(--brillo);
+}
+
+.coleccion-boton:active:not(:disabled) {
+  background: #5a3fb8;
+}
+
+.coleccion-boton:disabled {
+  background: var(--superficie-2);
+  color: var(--texto-suave);
+  cursor: default;
+}
+
+.coleccion-subtitulo {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+}
+
+.coleccion-nuevos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 7.5rem), 1fr));
+  gap: clamp(0.5rem, 2vw, 0.8rem);
+  margin-bottom: 1.4rem;
+}
+
+.coleccion-nuevo {
+  min-width: 0;
+  padding: 0.7em 0.4em;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  background: var(--superficie);
+  text-align: center;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.coleccion-nuevo.repetido {
+  border-color: var(--rosa-borde);
+  background: var(--rosa-fondo);
+  color: var(--rosa);
+}
+
+.coleccion-nuevo p {
+  margin: 0.15em 0;
+  overflow-wrap: anywhere;
+  text-transform: capitalize;
+}
+
+.coleccion-nuevo img {
+  display: block;
+  width: min(80%, 9rem);
+  height: auto;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.coleccion-album {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 3.5rem), 1fr));
+  gap: clamp(0.3rem, 1.5vw, 0.5rem);
+  padding-bottom: 1.5rem;
+}
+
+.coleccion-pokemon {
+  display: flex;
+  aspect-ratio: 1;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  background: var(--superficie);
+  color: var(--texto-suave);
+  font-size: clamp(0.65rem, 0.5rem + 0.6vw, 0.8rem);
+}
+
+.coleccion-pokemon p {
+  margin: 0;
+}
+
+.coleccion-pokemon.capturado {
+  border-color: var(--azul-borde);
+  background: var(--azul-fondo);
+  color: var(--azul);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.coleccion-pokemon img {
+  width: 75%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+}

@@ -1,0 +1,18 @@
+.c-info {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.5rem clamp(0.75rem, 3vw, 1.5rem);
+}
+
+.c-info h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.c-info-imagen {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+}

@@ -1,0 +1,46 @@
+.c-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 9rem), 1fr));
+  gap: clamp(0.5rem, 2vw, 1rem);
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem clamp(0.75rem, 3vw, 2rem) 1.5rem;
+}
+
+.c-lista-pokemon {
+  min-width: 0;
+  padding: 0.8em 0.5em;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  background: var(--superficie);
+  font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1rem);
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.c-lista-pokemon:hover {
+  border-color: var(--morado-claro);
+  box-shadow: 0 0 14px var(--brillo);
+}
+
+.c-lista-pokemon p:first-child {
+  color: var(--texto-suave);
+  font-size: 0.85em;
+}
+
+.c-lista-pokemon p:nth-child(2) {
+  overflow-wrap: anywhere;
+  color: var(--texto);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.c-lista-pokemon img {
+  display: block;
+  width: min(80%, 10rem);
+  height: auto;
+  aspect-ratio: 1;
+  margin: 0.4em auto 0;
+  object-fit: contain;
+}
